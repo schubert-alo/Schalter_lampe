@@ -13,7 +13,7 @@ public class Lampe {
         System.out.println("Lampe aus.");
     }
 
-    public boolean isLeuchtet() {
+    public boolean getLeuchtet() {
         return leuchtet;
     }
 

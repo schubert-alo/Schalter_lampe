@@ -9,7 +9,7 @@ public class Schalter {
     }
 
     public void drueckeSchalter() {
-        gedrueckt = !gedrueckt;
+        gedrueckt = !gedrueckt; // toggle
         if(gedrueckt) {
             lampe.anschalten();
         } else {
