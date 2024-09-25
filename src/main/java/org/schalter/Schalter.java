@@ -1,19 +1,19 @@
 package org.schalter;
 
 public class Schalter {
-    private Lampe lampe;
+    private SchalterClient client;
     private boolean gedrueckt;
 
-    public Schalter(Lampe lampe) {
-        this.lampe = lampe;
+    public Schalter(SchalterClient client) {
+        this.client = client;
     }
 
     public void drueckeSchalter() {
-        gedrueckt = !gedrueckt; // toggle
+        gedrueckt = !gedrueckt;
         if(gedrueckt) {
-            lampe.anschalten();
+            client.anschalten();
         } else {
-            lampe.ausschalten();
+            client.ausschalten();
         }
     }
 }

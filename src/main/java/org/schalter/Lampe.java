@@ -1,6 +1,6 @@
 package org.schalter;
 
-public class Lampe {
+public class Lampe implements SchalterClient {
     private boolean leuchtet;
 
     public void anschalten() {
@@ -12,13 +12,4 @@ public class Lampe {
         leuchtet = false;
         System.out.println("Lampe aus.");
     }
-
-    public boolean getLeuchtet() {
-        return leuchtet;
-    }
-
-    public void setLeuchtet(boolean leuchtet) {
-        this.leuchtet = leuchtet;
-    }
-
 }
